@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 
-function Footer(props) {
+function Footer() {
   return (
     <footer className="footer">
       <div className="footer-brand">

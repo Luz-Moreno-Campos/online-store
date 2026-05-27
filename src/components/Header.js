@@ -4,7 +4,7 @@ import { IoCartOutline } from "react-icons/io5";
 
 import storeLogo from "../assets/media/store-logo.png"
 
-function Header(props) {
+function Header() {
   return (
     <header className="header">
       <div className="header-logo">
