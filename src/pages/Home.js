@@ -41,7 +41,7 @@ function Home() {
   const filteredProducts = category === "all" ? products : products.filter(prod => prod.category === category);
 
   const sortedProducts = [...filteredProducts].sort((a, b) => {
-    //I creeated a copy of the  filteredProducts array to sort it without modifying the original
+    //I created a copy of the  filteredProducts array to sort it without modifying the original
 
     if (sortOption === "lowest-price") {
       return a.price - b.price;
@@ -58,6 +58,13 @@ function Home() {
     return 0;
   });
 
+  const handleSorting = (option) => {
+    setSortOption(option);
+  };
+
+  const handleCategoryFilter = (cat) => {
+    setCategory(cat);
+  };
 
   return (
     <>
