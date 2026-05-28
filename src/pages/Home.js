@@ -14,8 +14,8 @@ function Home() {
       try {
         setLoading(true);
 
-        const menRes = await axios.get("https://fakestoreapi.com/products/category/men's clothing");
-        const womenRes = await axios.get("https://fakestoreapi.com/products/category/women's clothing");
+        const menRes = await axios.get("https://fakestoreapi.com/products/category/men's%20clothing");
+        const womenRes = await axios.get("https://fakestoreapi.com/products/category/women's%20clothing");
 
         const clothing = [...menRes.data, ...womenRes.data];
         setProducts(clothing);
