@@ -22,7 +22,16 @@ function ContactForm({ onSubmit, isSubmitting }) {
                 })}
             />
             {errors.email && <p>Email is invalid or required</p>}
-            
+            <textarea
+                placeholder="Message"
+                {...register("message", { required: true })}
+            />
+            {errors.message && <p>Message is required</p>}
+            <Button
+                label={isSubmitting ? "Sending..." : "Send Message"}
+                type="submit"
+                disabled={isSubmitting}
+            />
         </form>
     )
 }
