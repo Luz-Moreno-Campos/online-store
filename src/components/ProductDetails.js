@@ -58,6 +58,19 @@ function ProductDetails ({ product }) {
                         <FaPlus />
                     </button>
                 </div>
+                <button onClick={handleAdd}> Add to Cart </button>
+                <Link to="/cart"> Go to Cart </Link>
+                <div>
+                    <button onClick={() => setTab("Description")}> Description </button>
+                    <button onClick={() => setTab("Details")}> Details </button>
+                </div>
+                {tab === "Description" && (<p>{product.description}</p>)}
+                {tab === "Details" && (
+                    <ul>
+                        <li> Category: {product.category} </li>
+                        <li> Price: ${product.price} </li>
+                    </ul>
+                )}
             </div>
         </div>
     ) 
