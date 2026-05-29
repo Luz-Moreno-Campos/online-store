@@ -1,3 +1,5 @@
+import '../css/cartSummary.css';
+
 function CartSummary({ items }) {
     // calculate subtotal
     const subtotal = items.reduce(

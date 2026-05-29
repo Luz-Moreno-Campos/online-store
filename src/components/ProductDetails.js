@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import useCartStore from "../store/cartStore";
+import Button from "./Button";
+import '../css/productDetails.css';
 
-function ProductDetails ({ product }) {
-     // Zustand store action
+function ProductDetails({ product }) {
+    // Zustand store action
     const addItem = useCartStore((state) => state.addItem);
     // Local states
     const [quantity, setQuantity] = useState(1);
@@ -59,7 +61,11 @@ function ProductDetails ({ product }) {
                     </button>
                 </div>
                 <button onClick={handleAdd}> Add to Cart </button>
-                <Link to="/cart"> Go to Cart </Link>
+                <Button
+                    label="Go to Cart"
+                    to="/cart"
+                    variant="primary"
+                />
                 <div>
                     <button onClick={() => setTab("Description")}> Description </button>
                     <button onClick={() => setTab("Details")}> Details </button>
@@ -73,7 +79,7 @@ function ProductDetails ({ product }) {
                 )}
             </div>
         </div>
-    ) 
+    )
 }
 
 export default ProductDetails;

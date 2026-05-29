@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import './reset.css';
+
+/* Base button style */
+.primary-button,
+.secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 26px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    letter-spacing: 0.3px;
+}
+
+/* PRIMARY (GREEN) */
+.primary-button {
+    background: #00a86b;
+    color: #fff;
+}
+
+.primary-button:hover {
+    background: #008f5a;
+    transform: translateY(-2px);
+}
+
+/* SECONDARY (DARK) */
+.secondary-button {
+    background: #333;
+    color: #fff;
+}
+
+.secondary-button:hover {
+    background: #222;
+    transform: translateY(-2px);
+}

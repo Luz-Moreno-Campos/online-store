@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import Button from "./Button";
+import '../css/contact.css';
 
 function ContactForm({ onSubmit, isSubmitting }) {
     // I'm using useForm to handle form state and validation.

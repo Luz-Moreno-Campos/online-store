@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../css/about.css';
 
 function Button({ label, onClick, type = "button", disabled = false, to, variant = "primary" }) {
     const className = `${variant}-button`;

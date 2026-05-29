@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import ContactForm from "../components/ContactForm";
+import '../css/contact.css';
 
 function Contact() {
     const [isSubmitting, setIsSubmitting] = useState(false);
