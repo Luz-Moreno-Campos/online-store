@@ -22,7 +22,7 @@ function Cart () {
         );
     }
     return (
-         <div className="cart-page">
+        <div className="cart-page">
             <div className="cart-header">
                 <h1>Shopping Cart</h1>
                 <span>{items.length} item{items.length > 1 && "s"}</span>
@@ -35,6 +35,17 @@ function Cart () {
                             item={item}
                         />
                     ))}
+                    <div className="cart-actions">
+                        <button onClick={clearCart} className="clear-cart">Clear Cart</button>
+                        <Link to="/" className="continue-shopping">
+                            <FaArrowLeft />
+                            Continue Shopping
+                        </Link>
+                    </div>
+                </div>
+                <CartSummary items={items} />
+            </div>
+        </div>
     )
 }
 
