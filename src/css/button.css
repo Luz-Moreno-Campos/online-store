@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import './reset.css';
+
+.primary-button,
+.secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+}
+
+.primary-button {
+    background: #00a86b;
+    color: #fff;
+}
+
+.primary-button:hover {
+    background: #008f5a;
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background: #333;
+    color: #fff;
+}
+
+.secondary-button:hover {
+    background: #222;
+}
