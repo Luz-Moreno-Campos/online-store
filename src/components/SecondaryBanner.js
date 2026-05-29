@@ -5,10 +5,9 @@ function SecondaryBanner () {
         <section className="secondary-banner">
             <div className="overlay">
                 <div className="banner-content">
-                    <h1>Timeless Style <br /><span>&amp; Modern Elegance</span></h1>
+                    <h1>Spring is blooming, and so are you.</h1>
                     <p>
-                        Discover premium clothing designed for confidence, comfort, and
-                        effortless everyday wear.
+                        Referesh your style with <span>50% off</span> selected items.
                     </p>
                     <div className="banner-buttons">
                         <Button
