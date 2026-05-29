@@ -11,7 +11,9 @@ function ProductGallery(props) {
   return (
 
     <section className="product-gallery">
+       {/* I used a key that combines category and sortOption so Swiper resets whenever either one changes */}
       <Swiper
+        key={`${props.category}-${props.sortOption}`}
         modules={[Pagination]}
         spaceBetween={20}
         slidesPerView={1}
