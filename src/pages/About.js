@@ -76,6 +76,19 @@ function About () {
                     </div>
                 </div>
             </section>
+            <section className="about-mission container">
+                <h2 className="section-title">Our Mission</h2>
+                <p>
+                    At Urban Fit & Co., our mission is to empower individuals
+                    through fashion that feels as good as it looks. We aim to
+                    create clothing that supports confidence, embraces simplicity,
+                    and adapts effortlessly to modern lifestyles.
+                </p>
+                <p>
+                    We are committed to delivering style that is accessible,
+                    reliable, and designed with purpose — because what you wearshould reflect who you are.
+                </p>
+            </section>
         </div>
     )
 }
