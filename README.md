@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Urban Fit & Co. - *Feel your style*
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Urban Fit & Co. is a modern online clothing store built with React.  
+The app focuses on clean UI, intuitive navigation, and a smooth shopping experience inspired by modern e‑commerce platforms.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Dynamic Product Gallery**  
+  Displays products from the Fake Store API with category filtering and sorting options.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Category Filtering**  
+  Users can browse items by category (men and women clothing).
 
-### `npm test`
+- **Sorting Options**  
+  Sort products by:
+  - Lowest price
+  - Highest price
+  - Most popular (rating count)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Hero Banner + Secondary Banner**  
+  Marketing sections designed to highlight promotions and brand identity.
 
-### `npm run build`
+- **Reusable Components**  
+  Header, Footer, Product Cards, Dropdowns, Category Selector, etc.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Product Detail Page**  
+  Full product information including image, description, price,  and quantity selector.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Similar Products Gallery**  
+  Displays 3 related items based on product category.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Shopping Cart System**  
+  Add, remove, and update product quantities with automatic subtotal, tax, and total calculation.
 
-### `npm run eject`
+- **404 NotFound Page**  
+  Custom error page with navigation back to Home.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Client-Side Routing**  
+  Proper route handling using React Router
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **API Integration**  
+  Fetches product data using Fake Store API and axios.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Carousel / Slider**  
+  Interactive image sliders using Swiper.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🛠️ Technologies Used
 
-## Learn More
+- **React**
+- **React Router**
+- **Axios**
+- **CSS**
+- **Fake Store API**
+- **JavaScript (ES6+)**
+- **Swiper**
+- **Zustand**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+##  Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Home**
+- **Product**
+- **Cart**
+- **About**
+- **Contact**
+- **NotFound**
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🧩  Components
 
-### Making a Progressive Web App
+- **Header**
+- **Footer**
+- **HeroBanner**
+- **SecondaryBanner**
+- **ProductGallery**
+- **ProductCard**
+- **ProductDetail**
+- **SortFilterBar**
+- **CategorySelector**
+- **CartItem**
+- **CartSummary**
+- **ContactForm**
+- **Button**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
