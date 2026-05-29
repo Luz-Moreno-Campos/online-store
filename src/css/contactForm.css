@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import './reset.css';
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+form input,
+form textarea {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00a86b;
+}
+
+form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+form p {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -10px;
+}
