@@ -32,8 +32,13 @@ function About () {
                             Whether you're heading out for a busy day or keeping things
                             simple and relaxed, our clothing is designed to fit your lifestyle.
                         </p>
-
-                        
+                        <Button label="SHOP COLLECTION" to="/" />
+                    </div>
+                    <div className="about-story__image">
+                        <img
+                            src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDI%3D"
+                            alt="Fashion"
+                        />
                     </div>
                 </div>
             </section>
