@@ -56,12 +56,20 @@ function App() {
       {loading && <p>Loading products...</p>}
       {error && <p>{error}</p>}
       {!loading && !error && (
-        <Routes>
-          <Route path="/" element={<Home products={products} />} />
-          <Route path="/product/:id" element={<Product products={products} />} />
-          <Route path="*" element={<NotFound />} />
+        <>
+        <Header />
+          <Routes>
+            <Route path="/" element={<Home products={products} />} />
+            <Route path="/product/:id" element={<Product products={products} />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="*" element={<NotFound />} />
 
-        </Routes>
+          </Routes>
+          {!hideBanner && <SecondaryBanner />}
+          <Footer />
+        </>
       )}
     </>
 
