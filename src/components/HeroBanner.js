@@ -1,3 +1,4 @@
+import "../css/HeroBanner.css";
 
 function HeroBanner() {
   return (

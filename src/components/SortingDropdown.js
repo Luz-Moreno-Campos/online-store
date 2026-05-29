@@ -1,3 +1,5 @@
+import "../css/SortingDropdown.css";
+
 function SortingDropdown(props) {
   return (
     <div className="sorting-dropdown">
