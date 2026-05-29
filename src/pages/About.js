@@ -42,6 +42,40 @@ function About () {
                     </div>
                 </div>
             </section>
+            <section className="about-values container">
+                <h2 className="section-title">What We Stand For</h2>
+                <div className="about-values__grid">
+                    <div className="about-value">
+                        <h3>Quality Fabric</h3>
+                        <p>
+                            We carefully select durable, premium materials that
+                            feel comfortable on the skin while maintaining their
+                            shape and finish over time.
+                        </p>
+                    </div>
+                    <div className="about-value">
+                        <h3>Clean Design</h3>
+                        <p>
+                            Our designs focus on simplicity and timeless style,
+                            ensuring every piece remains relevant beyond seasonal trends.
+                        </p>
+                    </div>
+                    <div className="about-value">
+                        <h3>Comfort First</h3>
+                        <p>
+                            Every garment is designed with everyday movement in mind,
+                            giving you confidence and ease throughout your day.
+                        </p>
+                    </div>
+                    <div className="about-value">
+                        <h3>Urban Inspiration</h3>
+                        <p>
+                            Rooted in modern city culture, our collections reflect
+                            individuality, diversity, and self-expression.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
