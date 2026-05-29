@@ -7,6 +7,20 @@ import Button from "../components/Button";
 import useCartStore from "../store/cartStore";
 
 function Cart () {
+    const items = useCartStore((state) => state.items);
+    const clearCart = useCartStore((state) => state.clearCart);
+
+    // Empty state
+    if (items.length === 0) {
+        return (
+            <div className="cart-empty">
+                <IoCartOutline size={60} />
+                <h2>Your cart is empty</h2>
+                <p>Start adding items to your cart.</p>
+                <Button label="Start Shopping" to="/" />
+            </div>
+        );
+    }
     return (
         <>
         </>
