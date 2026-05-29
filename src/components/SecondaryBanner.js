@@ -1,4 +1,5 @@
 import Button from "./Button";
+import '../css/secondaryBanner.css';
 
 function SecondaryBanner () {
     return (

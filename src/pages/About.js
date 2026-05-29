@@ -1,5 +1,6 @@
 import SecondaryBanner from "../components/SecondaryBanner";
 import Button from "../components/Button";
+import '../css/about.css';
 
 function About() {
     return (

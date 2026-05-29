@@ -1,4 +1,5 @@
 import ProductCard from "./ProductCard";
+import '../css/similarProduct.css';
 
 function SimilarProductGallery({ products, currentProductId }) {
   const similarProds = products

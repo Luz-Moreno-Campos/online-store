@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import axios from "axios";
 import ProductDetail from "../components/ProductDetails";
 import SimilarProductGallery from "../components/SimilarProductsGallery";
+import '../css/product.css';
 
 const pageVariants = {
     initial: { opacity: 0, y: 20 },

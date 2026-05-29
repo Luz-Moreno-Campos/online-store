@@ -5,6 +5,7 @@ import CartItem from "../components/CartItem";
 import CartSummary from "../components/CartSummary";
 import Button from "../components/Button";
 import useCartStore from "../store/cartStore";
+import '../css/cart.css';
 
 function Cart () {
     const items = useCartStore((state) => state.items);

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import useCartStore from "../store/cartStore";
+import '../css/cartItem.css';
 
 function CartItem({ item }) {
     const updateQuantity = useCartStore((s) => s.updateQuantity);
