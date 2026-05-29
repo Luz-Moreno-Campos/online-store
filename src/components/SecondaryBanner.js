@@ -10,6 +10,18 @@ function SecondaryBanner () {
                         Discover premium clothing designed for confidence, comfort, and
                         effortless everyday wear.
                     </p>
+                    <div className="banner-buttons">
+                        <Button
+                            label="SHOP COLLECTION"
+                            to="/"
+                            variant="primary"
+                        /><Button
+                            label="CONTACT US"
+                            to="/contact"
+                            variant="secondary"
+                        />
+                    </div>
+                </div>
             </div>
         </section>
     );
