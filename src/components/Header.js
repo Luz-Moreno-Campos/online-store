@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/header.css";
+import "../css/Header.css";
 import { NavLink, Link } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 
