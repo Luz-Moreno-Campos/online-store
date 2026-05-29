@@ -2,7 +2,6 @@ import { useState } from "react";
 import "../css/Home.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import {useState} from "react";
 import HeroBanner from "../components/HeroBanner";
 import CategorySelector from "../components/CategorySelector";
 import SortingDropdown from "../components/SortingDropdown";
@@ -45,7 +44,6 @@ function Home(props) {
 
   return (
     <>
-      <Header />
       <HeroBanner />
       <main className="home-main">
         <div className="filters-row">
