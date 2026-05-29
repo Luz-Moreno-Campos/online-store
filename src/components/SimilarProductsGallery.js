@@ -1,7 +1,9 @@
 import ProductCard from "./ProductCard";
 
-function SimilarProductGallery(props) {
-  const similarProds = props.products.filter(product => product.id !== Number(props.currentProductId)).slice(0, 3);
+function SimilarProductGallery({ products, currentProductId }) {
+  const similarProds = products
+    .filter(product => product.id !== currentProductId)
+    .slice(0, 3);
 
   return (
     <section className="similar-products-gallery">
