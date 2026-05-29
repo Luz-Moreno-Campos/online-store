@@ -5,3 +5,12 @@ import CartItem from "../components/CartItem";
 import CartSummary from "../components/CartSummary";
 import Button from "../components/Button";
 import useCartStore from "../store/cartStore";
+
+function Cart () {
+    return (
+        <>
+        </>
+    )
+}
+
+export default Cart;
