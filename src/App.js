@@ -19,6 +19,8 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const hideBanner =
+  location.pathname === "/contact" || location.pathname === "/cart";
 
   useEffect(() => {
     const fetchProducts = async () => {
