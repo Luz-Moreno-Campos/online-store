@@ -20,7 +20,7 @@ function App() {
   const [error, setError] = useState(null);
 
   const hideBanner =
-  location.pathname === "/contact" || location.pathname === "/cart";
+    location.pathname === "/contact" || location.pathname === "/cart";
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -57,7 +57,7 @@ function App() {
       {error && <p>{error}</p>}
       {!loading && !error && (
         <>
-        <Header />
+          <Header />
           <Routes>
             <Route path="/" element={<Home products={products} />} />
             <Route path="/product/:id" element={<Product products={products} />} />
