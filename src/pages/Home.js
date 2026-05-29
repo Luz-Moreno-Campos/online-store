@@ -1,3 +1,7 @@
+import { useState } from "react";
+import "../css/Home.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import {useState} from "react";
 import HeroBanner from "../components/HeroBanner";
 import CategorySelector from "../components/CategorySelector";
@@ -11,7 +15,7 @@ function Home(props) {
   const [category, setCategory] = useState("all");
 
   const filteredProducts = category === "all" ? props.products : props.products.filter(prod =>
-     prod.category.trim().toLowerCase() === category.trim().toLowerCase());
+    prod.category.trim().toLowerCase() === category.trim().toLowerCase());
 
   const sortedProducts = [...filteredProducts].sort((a, b) => {
     //I created a copy of the  filteredProducts array to sort it without modifying the original
@@ -41,13 +45,14 @@ function Home(props) {
 
   return (
     <>
-      <main>
-        <HeroBanner />
+      <Header />
+      <HeroBanner />
+      <main className="home-main">
         <div className="filters-row">
           <CategorySelector onCategorySelect={handleCategoryFilter} />
           <SortingDropdown sortOption={sortOption} onSortChange={handleSorting} />
         </div>
-        <ProductGallery products={sortedProducts} category={category}  sortOption={sortOption} />    
+        <ProductGallery products={sortedProducts} category={category} sortOption={sortOption} />
       </main>
     </>
 
