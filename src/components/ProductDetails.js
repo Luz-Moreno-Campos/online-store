@@ -31,6 +31,18 @@ function ProductDetails ({ product }) {
                     <img src={product.image} alt={product.title} />
                 </SwiperSlide>
             </Swiper>
+            <div>
+                <h2>{product.title}</h2>
+                <p>${product.price}</p>
+                <p>{product.category}</p>
+                <div>
+                    <p>Size: {size}</p>
+                    {sizes.map((sizeOption) => (
+                        <button key={sizeOption} onClick={() => setSize(sizeOption)}> {sizeOption}
+                        </button>
+                    ))}
+                </div>
+            </div>
         </div>
     ) 
 }
