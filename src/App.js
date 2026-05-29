@@ -1,9 +1,16 @@
 import { Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import NotFound from "./pages/NotFound"
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Cart from "./pages/Cart";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import SecondaryBanner from "./components/SecondaryBanner";
 
 
 
