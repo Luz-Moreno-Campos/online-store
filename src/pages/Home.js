@@ -1,11 +1,9 @@
 import {useState} from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import HeroBanner from "../components/HeroBanner";
 import CategorySelector from "../components/CategorySelector";
 import SortingDropdown from "../components/SortingDropdown";
 import ProductGallery from "../components/ProductGallery";
-/*import SecondaryBanner from "../components/SecondaryBanner"; ADD IT ONCE IT IS CREATED AND PUT IT IN THE JSX*/ 
+import SecondaryBanner from "../components/SecondaryBanner";
 
 function Home(props) {
 
@@ -43,7 +41,6 @@ function Home(props) {
 
   return (
     <>
-      <Header />
       <main>
         <HeroBanner />
         <div className="filters-row">
@@ -52,7 +49,6 @@ function Home(props) {
         </div>
         <ProductGallery products={sortedProducts} category={category}  sortOption={sortOption} />    
       </main>
-      <Footer />
     </>
 
   );

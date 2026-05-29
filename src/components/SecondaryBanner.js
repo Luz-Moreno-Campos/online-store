@@ -5,7 +5,7 @@ function SecondaryBanner () {
         <section className="secondary-banner">
             <div className="overlay">
                 <div className="banner-content">
-                    <h1>Spring is blooming, and so are you.</h1>
+                    <h1>SPRING is blooming, <em>&amp; so are YOU.</em></h1>
                     <p>
                         Referesh your style with <span>50% off</span> selected items.
                     </p>

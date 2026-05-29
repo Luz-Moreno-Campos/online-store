@@ -1,7 +1,7 @@
 import SecondaryBanner from "../components/SecondaryBanner";
 import Button from "../components/Button";
 
-function About () {
+function About() {
     return (
         <div className="about-page">
             <section className="about-story container">
@@ -32,6 +32,7 @@ function About () {
                             Whether you're heading out for a busy day or keeping things
                             simple and relaxed, our clothing is designed to fit your lifestyle.
                         </p>
+
                         <Button label="SHOP COLLECTION" to="/" />
                     </div>
                     <div className="about-story__image">
@@ -42,6 +43,7 @@ function About () {
                     </div>
                 </div>
             </section>
+
             <section className="about-values container">
                 <h2 className="section-title">What We Stand For</h2>
                 <div className="about-values__grid">
@@ -90,7 +92,7 @@ function About () {
                 </p>
             </section>
         </div>
-    )
+    );
 }
 
-export default About
+export default About;

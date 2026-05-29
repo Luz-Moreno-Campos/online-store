@@ -96,3 +96,5 @@ function Product() {
         </motion.div>
     )
 }
+
+export default Product;
