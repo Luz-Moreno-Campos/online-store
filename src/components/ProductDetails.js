@@ -24,8 +24,14 @@ function ProductDetails ({ product }) {
         return <p>Loading...</p>;
     }
     return (
-        <>
-        </>
+        <div className="product-detail">
+            {/* Product Image Slider */}
+            <Swiper slidesPerView={1}>
+                <SwiperSlide>
+                    <img src={product.image} alt={product.title} />
+                </SwiperSlide>
+            </Swiper>
+        </div>
     ) 
 }
 
