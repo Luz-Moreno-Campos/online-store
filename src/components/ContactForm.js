@@ -6,8 +6,13 @@ function ContactForm({ onSubmit, isSubmitting }) {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     return(
-        <form>
-            
+        <form >
+            <input
+                type="text"
+                placeholder="Full Name"
+                {...register("name", { required: true })}
+            />
+            {errors.name && <p>Name is required</p>}
         </form>
     )
 }
