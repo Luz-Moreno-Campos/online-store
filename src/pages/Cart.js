@@ -22,8 +22,19 @@ function Cart () {
         );
     }
     return (
-        <>
-        </>
+         <div className="cart-page">
+            <div className="cart-header">
+                <h1>Shopping Cart</h1>
+                <span>{items.length} item{items.length > 1 && "s"}</span>
+            </div>
+            <div className="cart-body">
+                <div className="cart-items">
+                    {items.map((item) => (
+                        <CartItem
+                            key={`${item.id}-${item.size}-${item.color}`} // ✅ correct unique key
+                            item={item}
+                        />
+                    ))}
     )
 }
 
