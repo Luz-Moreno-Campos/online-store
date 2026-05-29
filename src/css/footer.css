@@ -17,7 +17,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 100px;
-  font-family: 'Montserrat', sans-serif;
   color: #333;
 }
 
