@@ -42,6 +42,22 @@ function ProductDetails ({ product }) {
                         </button>
                     ))}
                 </div>
+                <div>
+                    <p>Color: {color}</p>
+                    {colors.map((colorOption) => (
+                        <button key={colorOption} onClick={() => setColor(colorOption)}> {colorOption}
+                        </button>
+                    ))}
+                </div>
+                <div>
+                    <button onClick={() => setQuantity(Math.max(1, quantity - 1))}>
+                        <FaMinus />
+                    </button>
+                    <span>{quantity}</span>
+                    <button onClick={() => setQuantity(quantity + 1)}>
+                        <FaPlus />
+                    </button>
+                </div>
             </div>
         </div>
     ) 
