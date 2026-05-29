@@ -6,13 +6,23 @@ function ContactForm({ onSubmit, isSubmitting }) {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     return(
-        <form >
+        <form onSubmit={handleSubmit(onSubmit)}>
             <input
                 type="text"
                 placeholder="Full Name"
                 {...register("name", { required: true })}
             />
             {errors.name && <p>Name is required</p>}
+            <input
+                type="text"
+                placeholder="Email"
+                {...register("email", {
+                    required: true,
+                    pattern: /^\S+@\S+$/i
+                })}
+            />
+            {errors.email && <p>Email is invalid or required</p>}
+            
         </form>
     )
 }
