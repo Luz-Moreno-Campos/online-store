@@ -7,7 +7,7 @@ import Button from "../components/Button";
 import useCartStore from "../store/cartStore";
 import '../css/cart.css';
 
-function Cart () {
+function Cart() {
     const items = useCartStore((state) => state.items);
     const clearCart = useCartStore((state) => state.clearCart);
 
@@ -38,10 +38,11 @@ function Cart () {
                     ))}
                     <div className="cart-actions">
                         <button onClick={clearCart} className="clear-cart">Clear Cart</button>
-                        <Link to="/" className="continue-shopping">
-                            <FaArrowLeft />
-                            Continue Shopping
-                        </Link>
+                        <Button
+                            label="Continue Shopping"
+                            to="/"
+                            variant="secondary"
+                        />
                     </div>
                 </div>
                 <CartSummary items={items} />
