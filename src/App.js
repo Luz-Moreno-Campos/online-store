@@ -1,4 +1,4 @@
-import {Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Home from "./pages/Home";
@@ -17,8 +17,15 @@ function App() {
       try {
         setLoading(true);
 
-        const menRes = await axios.get("https://fakestoreapi.com/products/category/men's%20clothing");
-        const womenRes = await axios.get("https://fakestoreapi.com/products/category/women's%20clothing");
+        /* 
+        I used Promise.all() method, which takes an array of promises and returns 
+        a single promise that resolves when all promises finish, which
+        results in  faster loading.
+        */
+        const [menRes, womenRes] = await Promise.all([
+          await axios.get("https://fakestoreapi.com/products/category/men's%20clothing"),
+          await axios.get("https://fakestoreapi.com/products/category/women's%20clothing")
+        ])
 
         const clothing = [...menRes.data, ...womenRes.data];
         setProducts(clothing);
@@ -36,7 +43,7 @@ function App() {
     if (loading) {
       return <p>Loading products...</p>;
     }
-  
+   
     if (error) {
       return <p >{error}</p>;
     }
