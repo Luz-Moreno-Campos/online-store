@@ -4,12 +4,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
-
 function ProductGallery(props) {
 
   const previewProducts = props.products.slice(0, 3);
   return (
-
     <section className="product-gallery">
        {/* I used a key that combines category and sortOption so Swiper resets whenever either one changes */}
       <Swiper
